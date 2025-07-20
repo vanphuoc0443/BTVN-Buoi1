@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Văn Phước - Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="phan-ho-so">
+                <img src="asset/75195219.jpg" alt="Nguyễn Văn Phước" class="anh-dai-dien">
+                <h1>Nguyễn Văn Phước</h1>
+                <p class="mo-ta-ngan">Tôi là sinh viên ngành CNTT, yêu thích lập trình web và UI/UX.</p>
+            </div>
+        </header>
+
+        <main class="noi-dung-chinh">
+            <section class="phan-so-thich">
+                <h2>Sở thích</h2>
+                <ul class="danh-sach-so-thich">
+                    <li>Đọc sách</li>
+                    <li>Chơi thể thao</li>
+                    <li>Du lịch</li>
+                </ul>
+            </section>
+
+            <section class="phan-ky-nang">
+                <h2>Kỹ năng</h2>
+                <table class="bang-ky-nang">
+                    <thead>
+                        <tr>
+                            <th>Kỹ năng</th>
+                            <th>Mức độ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML</td>
+                            <td>Tốt</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>Khá</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>Trung bình</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="phan-lien-he">
+                <h2>Liên hệ</h2>
+                <form class="form-lien-he">
+                    <div class="nhom-truong">
+                        <label for="ho-ten">Họ tên:</label>
+                        <input type="text" id="ho-ten" name="ho-ten" required>
+                    </div>
+                    
+                    <div class="nhom-truong">
+                        <label for="thu-dien-tu">Email:</label>
+                        <input type="email" id="thu-dien-tu" name="thu-dien-tu" required>
+                    </div>
+                    
+                    <div class="nhom-truong">
+                        <label for="loi-nhan">Lời nhắn:</label>
+                        <textarea id="loi-nhan" name="loi-nhan" rows="5" required></textarea>
+                    </div>
+                    
+                    <div class="cac-nut-bam">
+                        <button type="submit" class="nut-trang-chu">Trang chủ</button>
+                        <button type="button" class="nut-gioi-thieu">Giới thiệu</button>
+                        <button type="button" class="nut-bai-viet">Bài viết</button>
+                        <button type="button" class="nut-lien-he">Liên hệ</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="phan-bai-viet">
+                <div class="container-bai-viet">
+                    <div class="bai-viet-dau-tien">
+                        <h2>Bài viết đầu tiên</h2>
+                        <div class="noi-dung-bai-viet">
+                            <img src="asset/OIP.webp" alt="Hình bài viết" class="anh-bai-viet">
+                            <p>Đây là bài viết đầu tiên trên blog của tôi. Mình sẽ chia sẻ về hành trình học lập trình web và những trải nghiệm thú vị...</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bai-viet-noi-bat">
+                        <h3>Bài nổi bật</h3>
+                        <p>Bạn có thể xem thêm bài viết về "5 mẹo học HTML nhanh và hiệu quả".</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="chan-trang">
+            <p>© 2025 Blog của Nguyễn Văn Phước. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

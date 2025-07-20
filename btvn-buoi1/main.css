@@ -1,0 +1,262 @@
+/* Reset và thiết lập cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    min-height: 100vh;
+}
+
+.header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.phan-ho-so {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.anh-dai-dien {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 4px solid white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    object-fit: cover;
+}
+
+.header h1 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.mo-ta-ngan {
+    font-size: 1.1em;
+    opacity: 0.9;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.noi-dung-chinh {
+    padding: 0 20px;
+}
+
+section {
+    margin: 40px 0;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #2c5aa0;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    border-bottom: 2px solid #e0e6ed;
+    padding-bottom: 10px;
+}
+
+.danh-sach-so-thich {
+    list-style: none;
+}
+
+.danh-sach-so-thich li {
+    padding: 8px 0;
+    padding-left: 20px;
+    position: relative;
+    font-size: 1.1em;
+}
+
+.danh-sach-so-thich li:before {
+    content: "•";
+    color: #2c5aa0;
+    font-size: 1.2em;
+    position: absolute;
+    left: 0;
+}
+
+.bang-ky-nang {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.bang-ky-nang th {
+    background-color: #2c5aa0;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.bang-ky-nang td {
+    padding: 12px;
+    border-bottom: 1px solid #e0e6ed;
+}
+
+.bang-ky-nang tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.bang-ky-nang tr:hover {
+    background-color: #e3f2fd;
+}
+
+/* Form liên hệ */
+.nhom-truong {
+    margin-bottom: 20px;
+}
+
+.nhom-truong label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #555;
+}
+
+.nhom-truong input,
+.nhom-truong textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e0e6ed;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.nhom-truong input:focus,
+.nhom-truong textarea:focus {
+    outline: none;
+    border-color: #2c5aa0;
+    box-shadow: 0 0 0 3px rgba(44, 90, 160, 0.1);
+}
+
+/* Các nút bấm */
+.cac-nut-bam {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.cac-nut-bam button {
+    padding: 12px 24px;
+    background-color: #2c5aa0;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.cac-nut-bam button:hover {
+    background-color: #1e3d6f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.cac-nut-bam button:active {
+    transform: translateY(0);
+}
+
+.container-bai-viet {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.bai-viet-dau-tien {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.bai-viet-dau-tien h2 {
+    color: #2c5aa0;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.noi-dung-bai-viet {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.anh-bai-viet {
+    width: 120px;
+    height: 80px;
+    border-radius: 6px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.noi-dung-bai-viet p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+}
+
+.bai-viet-noi-bat {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.bai-viet-noi-bat h3 {
+    color: #2c5aa0;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.bai-viet-noi-bat p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.bai-viet-noi-bat em {
+    color: #2c5aa0;
+    font-style: normal;
+    font-weight: 600;
+}
+
+
+.chan-trang {
+    background-color: #2c5aa0;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.chan-trang p {
+    font-size: 14px;
+    opacity: 0.9;
+}
